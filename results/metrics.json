@@ -1,0 +1,26 @@
+[
+  {
+    "model": "logistic",
+    "log_loss": 0.8617,
+    "brier": 0.506,
+    "accuracy": 0.608
+  },
+  {
+    "model": "xgboost",
+    "log_loss": 0.863,
+    "brier": 0.5065,
+    "accuracy": 0.6063
+  },
+  {
+    "model": "rf",
+    "log_loss": 0.8631,
+    "brier": 0.5068,
+    "accuracy": 0.6083
+  },
+  {
+    "model": "baseline_priors",
+    "log_loss": 1.0508,
+    "brier": 0.6337,
+    "accuracy": 0.4781
+  }
+]
