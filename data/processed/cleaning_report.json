@@ -1,0 +1,65 @@
+{
+  "generated_utc": "2026-06-11T06:47:38+00:00",
+  "input_path": "/content/World-cup-2026-prediction/data/raw/international_results/results.csv",
+  "input_rows": 49472,
+  "steps": [
+    {
+      "step": "parse_dtypes",
+      "rows_before": 49472,
+      "rows_after": 49472,
+      "rows_removed": 0,
+      "detail": "dropped 0 unparseable dates"
+    },
+    {
+      "step": "trim_strings",
+      "rows_before": 49472,
+      "rows_after": 49472,
+      "rows_removed": 0,
+      "detail": "5 text columns"
+    },
+    {
+      "step": "standardize_names",
+      "rows_before": 49472,
+      "rows_after": 49472,
+      "rows_removed": 0,
+      "detail": "973 rows had at least one name remapped"
+    },
+    {
+      "step": "handle_missing",
+      "rows_before": 49472,
+      "rows_after": 49400,
+      "rows_removed": 72,
+      "detail": "72 future fixtures split off; 0 past matches without scores dropped"
+    },
+    {
+      "step": "remove_duplicates",
+      "rows_before": 49400,
+      "rows_after": 49398,
+      "rows_removed": 2,
+      "detail": "0 exact, 2 logical (same date+teams)"
+    },
+    {
+      "step": "assign_team_ids",
+      "rows_before": 49398,
+      "rows_after": 49398,
+      "rows_removed": 0,
+      "detail": "325 distinct home ids"
+    },
+    {
+      "step": "validate",
+      "rows_before": 49398,
+      "rows_after": 49398,
+      "rows_removed": 0,
+      "detail": "8 hard checks passed"
+    },
+    {
+      "step": "assign_team_ids",
+      "rows_before": 72,
+      "rows_after": 72,
+      "rows_removed": 0,
+      "detail": "48 distinct home ids"
+    }
+  ],
+  "output_rows": 49398,
+  "warnings": []
+}

@@ -218,5 +218,8 @@ def build_features(matches: pd.DataFrame,
     if rankings is not None:
         long = add_fifa_rank(long, rankings)
     out = to_match_level(matches, long)
-    out.attrs["elo_engine"] = matches.attrs["elo_engine"]
+    # NOTE: deliberately NOT propagating the EloEngine onto out.attrs -
+    # pandas serializes attrs into parquet metadata (json), and a live
+    # object can't survive that. Get final ratings from add_elo's frame:
+    #     rated = add_elo(matches); rated.attrs["elo_engine"].ratings
     return out
