@@ -1,0 +1,85 @@
+# Supplementary team -> confederation map for teams NOT in the 2026 field.
+# (The 48 qualified teams come from wc2026_teams.csv automatically.)
+# Extend freely; unknown teams degrade gracefully to no continent feature.
+team,confederation
+Italy,UEFA
+Russia,UEFA
+Serbia,UEFA
+Poland,UEFA
+Ukraine,UEFA
+Denmark,UEFA
+Wales,UEFA
+Northern Ireland,UEFA
+Republic of Ireland,UEFA
+Greece,UEFA
+Romania,UEFA
+Hungary,UEFA
+Bulgaria,UEFA
+Slovakia,UEFA
+Slovenia,UEFA
+Finland,UEFA
+Iceland,UEFA
+Albania,UEFA
+North Macedonia,UEFA
+Georgia,UEFA
+Israel,UEFA
+East Germany,UEFA
+Chile,CONMEBOL
+Peru,CONMEBOL
+Venezuela,CONMEBOL
+Bolivia,CONMEBOL
+Costa Rica,CONCACAF
+Honduras,CONCACAF
+Jamaica,CONCACAF
+El Salvador,CONCACAF
+Trinidad and Tobago,CONCACAF
+Guatemala,CONCACAF
+Cuba,CONCACAF
+Nigeria,CAF
+Cameroon,CAF
+Mali,CAF
+Burkina Faso,CAF
+Zambia,CAF
+Kenya,CAF
+Uganda,CAF
+Gabon,CAF
+Guinea,CAF
+Angola,CAF
+Mozambique,CAF
+Zimbabwe,CAF
+Libya,CAF
+Togo,CAF
+Benin,CAF
+Madagascar,CAF
+Equatorial Guinea,CAF
+Gambia,CAF
+Sierra Leone,CAF
+Namibia,CAF
+Mauritania,CAF
+Tanzania,CAF
+Ethiopia,CAF
+Sudan,CAF
+China,AFC
+North Korea,AFC
+Thailand,AFC
+Vietnam,AFC
+Indonesia,AFC
+Malaysia,AFC
+India,AFC
+Oman,AFC
+Bahrain,AFC
+Kuwait,AFC
+United Arab Emirates,AFC
+Syria,AFC
+Lebanon,AFC
+Palestine,AFC
+Kyrgyzstan,AFC
+Tajikistan,AFC
+Turkmenistan,AFC
+Hong Kong,AFC
+Fiji,OFC
+Tahiti,OFC
+Papua New Guinea,OFC
+Solomon Islands,OFC
+Vanuatu,OFC
+New Caledonia,OFC

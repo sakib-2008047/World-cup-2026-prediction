@@ -1,0 +1,62 @@
+# Team name normalization map.
+# Every raw team name encountered in ANY source dataset maps to one canonical name.
+# Canonical names follow the martj42 results.csv convention (the join backbone).
+# source_hint: where this variant typically appears (fifa = FIFA rankings dataset,
+#   results = martj42 results.csv, tm = Transfermarkt, official = FIFA.com 2026 list).
+# Variants that never occur in a given source are harmless - they simply never match.
+raw_name,canonical_name,source_hint,note
+# ---- 2026 qualified teams: official/FIFA-style variants ----
+Korea Republic,South Korea,fifa,FIFA official style
+Korea (South),South Korea,official,
+Korea DPR,North Korea,fifa,not qualified; included to avoid mis-mapping
+USA,United States,fifa,
+U.S.,United States,official,
+United States of America,United States,official,
+US,United States,misc,
+IR Iran,Iran,fifa,
+Iran IR,Iran,fifa,older ranking files
+Côte d'Ivoire,Ivory Coast,fifa,
+Cote d'Ivoire,Ivory Coast,official,unaccented variant
+Cote dIvoire,Ivory Coast,misc,apostrophe stripped
+Cabo Verde,Cape Verde,fifa,FIFA official style
+Cape Verde Islands,Cape Verde,fifa,older ranking files
+Türkiye,Turkey,fifa,renamed by FIFA in 2022; results.csv may use either
+Turkiye,Turkey,official,unaccented variant
+Czechia,Czech Republic,fifa,renamed 2023 in some sources
+Curacao,Curaçao,misc,unaccented variant
+Curaçao,Curaçao,results,identity row for accent safety
+Bosnia-Herzegovina,Bosnia and Herzegovina,misc,
+Bosnia & Herzegovina,Bosnia and Herzegovina,tm,
+Bosnia,Bosnia and Herzegovina,misc,
+Congo DR,DR Congo,fifa,
+Congo (DRC),DR Congo,official,
+Democratic Republic of the Congo,DR Congo,misc,
+DR-Congo,DR Congo,tm,
+Congo-Kinshasa,DR Congo,misc,do NOT confuse with Congo (Brazzaville)
+Netherlands Antilles,Curaçao,results,Curaçao FA is FIFA-recognized successor (pre-2011 matches)
+# ---- common variants for other qualified teams ----
+Saudi-Arabia,Saudi Arabia,tm,
+New-Zealand,New Zealand,tm,
+South-Africa,South Africa,tm,
+N. Ireland,Northern Ireland,misc,not qualified; avoid collision with Ireland
+Republic of Ireland,Republic of Ireland,fifa,not qualified; identity row to prevent mapping to Ireland variants
+# ---- historical predecessors (POLICY: successor inherits rating history) ----
+# These mappings are a modeling choice, not a fact. Document in README.
+West Germany,Germany,results,standard practice; DFB is legal successor
+East Germany,East Germany,results,kept separate (no 2026 successor claim); identity row
+USSR,Russia,results,FIFA treats Russia as successor; Russia not qualified in 2026
+Soviet Union,Russia,results,
+Czechoslovakia,Czech Republic,results,FIFA assigns record to Czech Republic
+Yugoslavia,Serbia,results,FIFA chain: Yugoslavia -> Serbia and Montenegro -> Serbia
+Serbia and Montenegro,Serbia,results,
+FR Yugoslavia,Serbia,results,
+Zaire,DR Congo,results,renamed 1997; same federation - matters for 2026 qualifier DR Congo
+Zaïre,DR Congo,results,accented variant
+Dutch East Indies,Indonesia,results,1938 World Cup participant
+Burma,Myanmar,results,
+Ceylon,Sri Lanka,results,
+Dahomey,Benin,results,
+Upper Volta,Burkina Faso,results,
+Swaziland,Eswatini,results,renamed 2018
+Macedonia,North Macedonia,results,renamed 2019
+FYR Macedonia,North Macedonia,fifa,
